@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'rest_framework.authtoken',
 
     # developer created apps
+    'apps.accounts.apps.AccountsConfig',
     'apps.core.apps.CoreConfig',
     'apps.vendor.apps.VendorConfig',
     'apps.order.apps.OrderConfig',
@@ -131,3 +132,6 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
+AUTH_USER_MODEL = 'accounts.CustomUser'
