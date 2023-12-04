@@ -1,0 +1,82 @@
+[
+{
+    "model": "vendor.vendor",
+    "pk": "VC19ebb2e0-9",
+    "fields": {
+        "created_at": "2023-12-04T05:47:20.619Z",
+        "updated_at": "2023-12-04T06:33:23.131Z",
+        "user": 6,
+        "name": "Rakesh Mulleti",
+        "contact_detail": "14, Tom Ashok Nagar, Delhi",
+        "address": "12, Tom street, Ashok Nagar, Delhi",
+        "on_time_delivery_rate": 0.0,
+        "quality_rating_avg": 4.0,
+        "avg_response_time": 1440.1666666666667,
+        "fulfillment_rate": 1.0
+    }
+},
+{
+    "model": "vendor.vendor",
+    "pk": "VC2c440105-2",
+    "fields": {
+        "created_at": "2023-12-04T07:28:01.680Z",
+        "updated_at": "2023-12-04T07:28:01.681Z",
+        "user": 8,
+        "name": "Kalpesh",
+        "contact_detail": "14, Tom Ashok Nagar, Delhi",
+        "address": "India",
+        "on_time_delivery_rate": 0.0,
+        "quality_rating_avg": 0.0,
+        "avg_response_time": 0.0,
+        "fulfillment_rate": 0.0
+    }
+},
+{
+    "model": "vendor.vendor",
+    "pk": "VC3c2debe5-a",
+    "fields": {
+        "created_at": "2023-12-03T11:30:41.729Z",
+        "updated_at": "2023-12-04T05:45:12.906Z",
+        "user": 5,
+        "name": "Rakesh Kumar",
+        "contact_detail": "12, Lal street, Ashok Nagar, Chennai",
+        "address": "14, James streen, Chennai, TN",
+        "on_time_delivery_rate": 0.57,
+        "quality_rating_avg": 2.67,
+        "avg_response_time": 1132.39,
+        "fulfillment_rate": 0.47
+    }
+},
+{
+    "model": "vendor.vendor",
+    "pk": "VCc61b3c7b-1",
+    "fields": {
+        "created_at": "2023-12-04T05:48:45.829Z",
+        "updated_at": "2023-12-04T05:48:45.829Z",
+        "user": 7,
+        "name": "Allen",
+        "contact_detail": "14, Tom Ashok Nagar, Delhi",
+        "address": "India",
+        "on_time_delivery_rate": 0.0,
+        "quality_rating_avg": 0.0,
+        "avg_response_time": 0.0,
+        "fulfillment_rate": 0.0
+    }
+},
+{
+    "model": "vendor.vendor",
+    "pk": "VCdeb1c3c0-b",
+    "fields": {
+        "created_at": "2023-12-03T11:18:58.234Z",
+        "updated_at": "2023-12-03T17:56:41.271Z",
+        "user": 3,
+        "name": "James",
+        "contact_detail": "12, Lal street, Ashok Nagar, Chennai",
+        "address": "12, Lal street, Ashok Nagar, Chennai",
+        "on_time_delivery_rate": 1.0,
+        "quality_rating_avg": 3.0,
+        "avg_response_time": 2.97,
+        "fulfillment_rate": 1.0
+    }
+}
+]

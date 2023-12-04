@@ -13,5 +13,8 @@ class CustomUser(AbstractUser):
 
     objects = CustomUserManager()
 
+    class Meta:
+        db_table = 'vm_users'
+
     def __str__(self):
         return self.email

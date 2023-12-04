@@ -26,5 +26,6 @@ urlpatterns = [
     path('api-auth/', include('rest_framework.urls')),
     path('api/', include('apps.vendor.api.urls')),
     path('api/', include('apps.order.api.urls')),
+    path('api/', include('apps.accounts.api.urls')),
     path('api-token-auth/', obtain_auth_token, name='api_token_auth'),
 ]

@@ -22,7 +22,7 @@ class PurchaseOrder(TimestampModel):
     vendor = models.ForeignKey(
         Vendor, on_delete=models.CASCADE, related_name='orders', null=True, blank=True)
     order_date = models.DateTimeField(auto_now_add=True)
-    delivery_date = models.DateField()
+    delivery_date = models.DateTimeField()
     items = models.JSONField()
     quantity = models.IntegerField()
     status = models.CharField(
@@ -30,7 +30,7 @@ class PurchaseOrder(TimestampModel):
     quality_rating = models.FloatField(null=True, blank=True)
     issue_date = models.DateTimeField(null=True, blank=True)
     acknowledgement_date = models.DateTimeField(null=True, blank=True)
-    delivered_on = models.DateField(null=True, blank=True)
+    delivered_on = models.DateTimeField(null=True, blank=True)
 
     class Meta:
         db_table = 'vm_purchase_orders'
@@ -81,7 +81,6 @@ def po_post_save_handler(sender, instance, created, *args, **kwargs):
                 status='COMPLETED',
                 quality_rating__isnull=False,
             ).aggregate(avg_quality_rating=Avg('quality_rating'))['avg_quality_rating']
-            average_quality_rating = round(average_quality_rating, 2)
 
             # Avarage Response Time
             average_acknowledgement_duration = PurchaseOrder.objects.filter(
@@ -97,7 +96,7 @@ def po_post_save_handler(sender, instance, created, *args, **kwargs):
                 )
             )['avg_acknowledgement_duration']
 
-            average_acknowledgement_duration_in_min = round(average_acknowledgement_duration.total_seconds() / 60, 2)
+            average_acknowledgement_duration_in_min = average_acknowledgement_duration.total_seconds() / 60
 
             # Fulfillment Rate
             vendor_po_stats = PurchaseOrder.objects.filter(vendor=vendor).aggregate(
