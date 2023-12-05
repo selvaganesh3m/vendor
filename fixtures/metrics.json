@@ -1,0 +1,604 @@
+[
+{
+    "model": "metric.performancemetric",
+    "pk": 1,
+    "fields": {
+        "created_at": "2023-12-03T11:24:12.177Z",
+        "updated_at": "2023-12-03T11:24:12.177Z",
+        "vendor": "VCdeb1c3c0-b",
+        "recorded_at": "2023-12-03T11:24:12.177Z",
+        "on_time_delivery_rate": 0.0,
+        "quality_rating_avg": 0.0,
+        "average_response_time": 2.9708796000000004,
+        "fulfilment_rate": 1.0
+    }
+},
+{
+    "model": "metric.performancemetric",
+    "pk": 2,
+    "fields": {
+        "created_at": "2023-12-03T11:24:58.635Z",
+        "updated_at": "2023-12-03T11:24:58.635Z",
+        "vendor": "VCdeb1c3c0-b",
+        "recorded_at": "2023-12-03T11:24:58.635Z",
+        "on_time_delivery_rate": 1.0,
+        "quality_rating_avg": 0.0,
+        "average_response_time": 2.9708796000000004,
+        "fulfilment_rate": 1.0
+    }
+},
+{
+    "model": "metric.performancemetric",
+    "pk": 3,
+    "fields": {
+        "created_at": "2023-12-03T11:32:29.913Z",
+        "updated_at": "2023-12-03T11:32:29.913Z",
+        "vendor": "VC3c2debe5-a",
+        "recorded_at": "2023-12-03T11:32:29.913Z",
+        "on_time_delivery_rate": 0.0,
+        "quality_rating_avg": 0.0,
+        "average_response_time": 1.1285901666666667,
+        "fulfilment_rate": 1.0
+    }
+},
+{
+    "model": "metric.performancemetric",
+    "pk": 4,
+    "fields": {
+        "created_at": "2023-12-03T11:33:21.455Z",
+        "updated_at": "2023-12-03T11:33:21.455Z",
+        "vendor": "VC3c2debe5-a",
+        "recorded_at": "2023-12-03T11:33:21.455Z",
+        "on_time_delivery_rate": 1.0,
+        "quality_rating_avg": 0.0,
+        "average_response_time": 1.1285901666666667,
+        "fulfilment_rate": 1.0
+    }
+},
+{
+    "model": "metric.performancemetric",
+    "pk": 5,
+    "fields": {
+        "created_at": "2023-12-03T15:09:44.318Z",
+        "updated_at": "2023-12-03T15:09:44.318Z",
+        "vendor": "VC3c2debe5-a",
+        "recorded_at": "2023-12-03T15:09:44.318Z",
+        "on_time_delivery_rate": 1.0,
+        "quality_rating_avg": 0.0,
+        "average_response_time": 3.8230023333333336,
+        "fulfilment_rate": 1.0
+    }
+},
+{
+    "model": "metric.performancemetric",
+    "pk": 6,
+    "fields": {
+        "created_at": "2023-12-03T15:50:27.588Z",
+        "updated_at": "2023-12-03T15:50:27.588Z",
+        "vendor": "VC3c2debe5-a",
+        "recorded_at": "2023-12-03T15:50:27.588Z",
+        "on_time_delivery_rate": 1.0,
+        "quality_rating_avg": 0.0,
+        "average_response_time": 2.714569066666667,
+        "fulfilment_rate": 1.0
+    }
+},
+{
+    "model": "metric.performancemetric",
+    "pk": 7,
+    "fields": {
+        "created_at": "2023-12-03T15:50:37.107Z",
+        "updated_at": "2023-12-03T15:50:37.107Z",
+        "vendor": "VC3c2debe5-a",
+        "recorded_at": "2023-12-03T15:50:37.107Z",
+        "on_time_delivery_rate": 1.0,
+        "quality_rating_avg": 0.0,
+        "average_response_time": 2.714569066666667,
+        "fulfilment_rate": 1.0
+    }
+},
+{
+    "model": "metric.performancemetric",
+    "pk": 8,
+    "fields": {
+        "created_at": "2023-12-03T17:56:15.713Z",
+        "updated_at": "2023-12-03T17:56:15.713Z",
+        "vendor": "VCdeb1c3c0-b",
+        "recorded_at": "2023-12-03T17:56:15.713Z",
+        "on_time_delivery_rate": 1.0,
+        "quality_rating_avg": 1.0,
+        "average_response_time": 2.97,
+        "fulfilment_rate": 1.0
+    }
+},
+{
+    "model": "metric.performancemetric",
+    "pk": 9,
+    "fields": {
+        "created_at": "2023-12-03T17:56:21.464Z",
+        "updated_at": "2023-12-03T17:56:21.464Z",
+        "vendor": "VCdeb1c3c0-b",
+        "recorded_at": "2023-12-03T17:56:21.464Z",
+        "on_time_delivery_rate": 1.0,
+        "quality_rating_avg": 5.0,
+        "average_response_time": 2.97,
+        "fulfilment_rate": 1.0
+    }
+},
+{
+    "model": "metric.performancemetric",
+    "pk": 10,
+    "fields": {
+        "created_at": "2023-12-03T17:56:22.465Z",
+        "updated_at": "2023-12-03T17:56:22.465Z",
+        "vendor": "VCdeb1c3c0-b",
+        "recorded_at": "2023-12-03T17:56:22.465Z",
+        "on_time_delivery_rate": 1.0,
+        "quality_rating_avg": 5.0,
+        "average_response_time": 2.97,
+        "fulfilment_rate": 1.0
+    }
+},
+{
+    "model": "metric.performancemetric",
+    "pk": 11,
+    "fields": {
+        "created_at": "2023-12-03T17:56:23.110Z",
+        "updated_at": "2023-12-03T17:56:23.110Z",
+        "vendor": "VCdeb1c3c0-b",
+        "recorded_at": "2023-12-03T17:56:23.110Z",
+        "on_time_delivery_rate": 1.0,
+        "quality_rating_avg": 5.0,
+        "average_response_time": 2.97,
+        "fulfilment_rate": 1.0
+    }
+},
+{
+    "model": "metric.performancemetric",
+    "pk": 12,
+    "fields": {
+        "created_at": "2023-12-03T17:56:28.914Z",
+        "updated_at": "2023-12-03T17:56:28.914Z",
+        "vendor": "VCdeb1c3c0-b",
+        "recorded_at": "2023-12-03T17:56:28.914Z",
+        "on_time_delivery_rate": 1.0,
+        "quality_rating_avg": 5.0,
+        "average_response_time": 2.97,
+        "fulfilment_rate": 1.0
+    }
+},
+{
+    "model": "metric.performancemetric",
+    "pk": 13,
+    "fields": {
+        "created_at": "2023-12-03T17:56:30.442Z",
+        "updated_at": "2023-12-03T17:56:30.442Z",
+        "vendor": "VCdeb1c3c0-b",
+        "recorded_at": "2023-12-03T17:56:30.442Z",
+        "on_time_delivery_rate": 1.0,
+        "quality_rating_avg": 5.0,
+        "average_response_time": 2.97,
+        "fulfilment_rate": 1.0
+    }
+},
+{
+    "model": "metric.performancemetric",
+    "pk": 14,
+    "fields": {
+        "created_at": "2023-12-03T17:56:37.992Z",
+        "updated_at": "2023-12-03T17:56:37.992Z",
+        "vendor": "VCdeb1c3c0-b",
+        "recorded_at": "2023-12-03T17:56:37.992Z",
+        "on_time_delivery_rate": 1.0,
+        "quality_rating_avg": 1.0,
+        "average_response_time": 2.97,
+        "fulfilment_rate": 1.0
+    }
+},
+{
+    "model": "metric.performancemetric",
+    "pk": 15,
+    "fields": {
+        "created_at": "2023-12-03T17:56:41.272Z",
+        "updated_at": "2023-12-03T17:56:41.272Z",
+        "vendor": "VCdeb1c3c0-b",
+        "recorded_at": "2023-12-03T17:56:41.272Z",
+        "on_time_delivery_rate": 1.0,
+        "quality_rating_avg": 3.0,
+        "average_response_time": 2.97,
+        "fulfilment_rate": 1.0
+    }
+},
+{
+    "model": "metric.performancemetric",
+    "pk": 16,
+    "fields": {
+        "created_at": "2023-12-03T18:00:36.054Z",
+        "updated_at": "2023-12-03T18:00:36.054Z",
+        "vendor": "VC3c2debe5-a",
+        "recorded_at": "2023-12-03T18:00:36.054Z",
+        "on_time_delivery_rate": 1.0,
+        "quality_rating_avg": 0.0,
+        "average_response_time": 2.72,
+        "fulfilment_rate": 1.0
+    }
+},
+{
+    "model": "metric.performancemetric",
+    "pk": 17,
+    "fields": {
+        "created_at": "2023-12-03T18:02:48.536Z",
+        "updated_at": "2023-12-03T18:02:48.536Z",
+        "vendor": "VC3c2debe5-a",
+        "recorded_at": "2023-12-03T18:02:48.536Z",
+        "on_time_delivery_rate": 1.0,
+        "quality_rating_avg": 0.0,
+        "average_response_time": 2.18,
+        "fulfilment_rate": 1.0
+    }
+},
+{
+    "model": "metric.performancemetric",
+    "pk": 18,
+    "fields": {
+        "created_at": "2023-12-03T18:03:00.030Z",
+        "updated_at": "2023-12-03T18:03:00.030Z",
+        "vendor": "VC3c2debe5-a",
+        "recorded_at": "2023-12-03T18:03:00.030Z",
+        "on_time_delivery_rate": 1.0,
+        "quality_rating_avg": 0.0,
+        "average_response_time": 2.18,
+        "fulfilment_rate": 1.0
+    }
+},
+{
+    "model": "metric.performancemetric",
+    "pk": 19,
+    "fields": {
+        "created_at": "2023-12-03T18:03:10.333Z",
+        "updated_at": "2023-12-03T18:03:10.333Z",
+        "vendor": "VC3c2debe5-a",
+        "recorded_at": "2023-12-03T18:03:10.333Z",
+        "on_time_delivery_rate": 1.0,
+        "quality_rating_avg": 0.0,
+        "average_response_time": 2.18,
+        "fulfilment_rate": 1.0
+    }
+},
+{
+    "model": "metric.performancemetric",
+    "pk": 20,
+    "fields": {
+        "created_at": "2023-12-03T18:05:18.029Z",
+        "updated_at": "2023-12-03T18:05:18.029Z",
+        "vendor": "VC3c2debe5-a",
+        "recorded_at": "2023-12-03T18:05:18.029Z",
+        "on_time_delivery_rate": 1.0,
+        "quality_rating_avg": 0.0,
+        "average_response_time": 1.8,
+        "fulfilment_rate": 1.0
+    }
+},
+{
+    "model": "metric.performancemetric",
+    "pk": 21,
+    "fields": {
+        "created_at": "2023-12-03T18:06:21.174Z",
+        "updated_at": "2023-12-03T18:06:21.174Z",
+        "vendor": "VC3c2debe5-a",
+        "recorded_at": "2023-12-03T18:06:21.174Z",
+        "on_time_delivery_rate": 1.0,
+        "quality_rating_avg": 0.0,
+        "average_response_time": 1.58,
+        "fulfilment_rate": 1.0
+    }
+},
+{
+    "model": "metric.performancemetric",
+    "pk": 22,
+    "fields": {
+        "created_at": "2023-12-03T18:08:34.588Z",
+        "updated_at": "2023-12-03T18:08:34.588Z",
+        "vendor": "VC3c2debe5-a",
+        "recorded_at": "2023-12-03T18:08:34.588Z",
+        "on_time_delivery_rate": 1.0,
+        "quality_rating_avg": 1.0,
+        "average_response_time": 1.58,
+        "fulfilment_rate": 1.0
+    }
+},
+{
+    "model": "metric.performancemetric",
+    "pk": 23,
+    "fields": {
+        "created_at": "2023-12-03T18:08:45.335Z",
+        "updated_at": "2023-12-03T18:08:45.336Z",
+        "vendor": "VC3c2debe5-a",
+        "recorded_at": "2023-12-03T18:08:45.336Z",
+        "on_time_delivery_rate": 1.0,
+        "quality_rating_avg": 2.5,
+        "average_response_time": 1.58,
+        "fulfilment_rate": 1.0
+    }
+},
+{
+    "model": "metric.performancemetric",
+    "pk": 24,
+    "fields": {
+        "created_at": "2023-12-03T18:16:12.763Z",
+        "updated_at": "2023-12-03T18:16:12.763Z",
+        "vendor": "VC3c2debe5-a",
+        "recorded_at": "2023-12-03T18:16:12.763Z",
+        "on_time_delivery_rate": 1.0,
+        "quality_rating_avg": 2.5,
+        "average_response_time": 1441.42,
+        "fulfilment_rate": 1.0
+    }
+},
+{
+    "model": "metric.performancemetric",
+    "pk": 25,
+    "fields": {
+        "created_at": "2023-12-03T18:16:32.477Z",
+        "updated_at": "2023-12-03T18:16:32.477Z",
+        "vendor": "VC3c2debe5-a",
+        "recorded_at": "2023-12-03T18:16:32.477Z",
+        "on_time_delivery_rate": 1.0,
+        "quality_rating_avg": 2.5,
+        "average_response_time": 1441.42,
+        "fulfilment_rate": 1.0
+    }
+},
+{
+    "model": "metric.performancemetric",
+    "pk": 26,
+    "fields": {
+        "created_at": "2023-12-03T18:16:44.761Z",
+        "updated_at": "2023-12-03T18:16:44.761Z",
+        "vendor": "VC3c2debe5-a",
+        "recorded_at": "2023-12-03T18:16:44.761Z",
+        "on_time_delivery_rate": 1.0,
+        "quality_rating_avg": 2.5,
+        "average_response_time": 1441.42,
+        "fulfilment_rate": 1.0
+    }
+},
+{
+    "model": "metric.performancemetric",
+    "pk": 27,
+    "fields": {
+        "created_at": "2023-12-03T18:16:54.447Z",
+        "updated_at": "2023-12-03T18:16:54.447Z",
+        "vendor": "VC3c2debe5-a",
+        "recorded_at": "2023-12-03T18:16:54.447Z",
+        "on_time_delivery_rate": 1.0,
+        "quality_rating_avg": 3.0,
+        "average_response_time": 1441.42,
+        "fulfilment_rate": 1.0
+    }
+},
+{
+    "model": "metric.performancemetric",
+    "pk": 28,
+    "fields": {
+        "created_at": "2023-12-03T18:18:48.108Z",
+        "updated_at": "2023-12-03T18:18:48.108Z",
+        "vendor": "VC3c2debe5-a",
+        "recorded_at": "2023-12-03T18:18:48.108Z",
+        "on_time_delivery_rate": 1.0,
+        "quality_rating_avg": 3.0,
+        "average_response_time": 1441.27,
+        "fulfilment_rate": 1.0
+    }
+},
+{
+    "model": "metric.performancemetric",
+    "pk": 29,
+    "fields": {
+        "created_at": "2023-12-03T18:19:03.441Z",
+        "updated_at": "2023-12-03T18:19:03.441Z",
+        "vendor": "VC3c2debe5-a",
+        "recorded_at": "2023-12-03T18:19:03.441Z",
+        "on_time_delivery_rate": 0.8,
+        "quality_rating_avg": 3.0,
+        "average_response_time": 1441.27,
+        "fulfilment_rate": 1.0
+    }
+},
+{
+    "model": "metric.performancemetric",
+    "pk": 30,
+    "fields": {
+        "created_at": "2023-12-03T18:19:13.877Z",
+        "updated_at": "2023-12-03T18:19:13.877Z",
+        "vendor": "VC3c2debe5-a",
+        "recorded_at": "2023-12-03T18:19:13.877Z",
+        "on_time_delivery_rate": 0.8,
+        "quality_rating_avg": 2.75,
+        "average_response_time": 1441.27,
+        "fulfilment_rate": 1.0
+    }
+},
+{
+    "model": "metric.performancemetric",
+    "pk": 31,
+    "fields": {
+        "created_at": "2023-12-03T18:21:21.770Z",
+        "updated_at": "2023-12-03T18:21:21.770Z",
+        "vendor": "VC3c2debe5-a",
+        "recorded_at": "2023-12-03T18:21:21.770Z",
+        "on_time_delivery_rate": 0.8,
+        "quality_rating_avg": 2.75,
+        "average_response_time": 1441.15,
+        "fulfilment_rate": 1.0
+    }
+},
+{
+    "model": "metric.performancemetric",
+    "pk": 32,
+    "fields": {
+        "created_at": "2023-12-03T18:21:41.452Z",
+        "updated_at": "2023-12-03T18:21:41.452Z",
+        "vendor": "VC3c2debe5-a",
+        "recorded_at": "2023-12-03T18:21:41.452Z",
+        "on_time_delivery_rate": 0.6666666666666666,
+        "quality_rating_avg": 2.75,
+        "average_response_time": 1441.15,
+        "fulfilment_rate": 1.0
+    }
+},
+{
+    "model": "metric.performancemetric",
+    "pk": 33,
+    "fields": {
+        "created_at": "2023-12-03T18:21:50.870Z",
+        "updated_at": "2023-12-03T18:21:50.870Z",
+        "vendor": "VC3c2debe5-a",
+        "recorded_at": "2023-12-03T18:21:50.870Z",
+        "on_time_delivery_rate": 0.6666666666666666,
+        "quality_rating_avg": 3.0,
+        "average_response_time": 1441.15,
+        "fulfilment_rate": 1.0
+    }
+},
+{
+    "model": "metric.performancemetric",
+    "pk": 34,
+    "fields": {
+        "created_at": "2023-12-03T18:22:06.635Z",
+        "updated_at": "2023-12-03T18:22:06.635Z",
+        "vendor": "VC3c2debe5-a",
+        "recorded_at": "2023-12-03T18:22:06.635Z",
+        "on_time_delivery_rate": 0.6666666666666666,
+        "quality_rating_avg": 2.6,
+        "average_response_time": 1441.15,
+        "fulfilment_rate": 1.0
+    }
+},
+{
+    "model": "metric.performancemetric",
+    "pk": 35,
+    "fields": {
+        "created_at": "2023-12-03T18:41:40.162Z",
+        "updated_at": "2023-12-03T18:41:40.162Z",
+        "vendor": "VC3c2debe5-a",
+        "recorded_at": "2023-12-03T18:41:40.162Z",
+        "on_time_delivery_rate": 0.67,
+        "quality_rating_avg": 2.6,
+        "average_response_time": 1585.1,
+        "fulfilment_rate": 1.0
+    }
+},
+{
+    "model": "metric.performancemetric",
+    "pk": 36,
+    "fields": {
+        "created_at": "2023-12-03T18:41:57.951Z",
+        "updated_at": "2023-12-03T18:41:57.951Z",
+        "vendor": "VC3c2debe5-a",
+        "recorded_at": "2023-12-03T18:41:57.951Z",
+        "on_time_delivery_rate": 0.57,
+        "quality_rating_avg": 2.6,
+        "average_response_time": 1585.1,
+        "fulfilment_rate": 1.0
+    }
+},
+{
+    "model": "metric.performancemetric",
+    "pk": 37,
+    "fields": {
+        "created_at": "2023-12-03T18:42:09.665Z",
+        "updated_at": "2023-12-03T18:42:09.665Z",
+        "vendor": "VC3c2debe5-a",
+        "recorded_at": "2023-12-03T18:42:09.665Z",
+        "on_time_delivery_rate": 0.57,
+        "quality_rating_avg": 2.6666666666666665,
+        "average_response_time": 1585.1,
+        "fulfilment_rate": 1.0
+    }
+},
+{
+    "model": "metric.performancemetric",
+    "pk": 38,
+    "fields": {
+        "created_at": "2023-12-03T19:26:12.346Z",
+        "updated_at": "2023-12-03T19:26:12.346Z",
+        "vendor": "VC3c2debe5-a",
+        "recorded_at": "2023-12-03T19:26:12.346Z",
+        "on_time_delivery_rate": 0.57,
+        "quality_rating_avg": 2.67,
+        "average_response_time": 1441.02,
+        "fulfilment_rate": 1.0
+    }
+},
+{
+    "model": "metric.performancemetric",
+    "pk": 39,
+    "fields": {
+        "created_at": "2023-12-03T19:39:20.693Z",
+        "updated_at": "2023-12-03T19:39:20.693Z",
+        "vendor": "VC3c2debe5-a",
+        "recorded_at": "2023-12-03T19:39:20.693Z",
+        "on_time_delivery_rate": 0.57,
+        "quality_rating_avg": 2.67,
+        "average_response_time": 1132.39,
+        "fulfilment_rate": 0.0
+    }
+},
+{
+    "model": "metric.performancemetric",
+    "pk": 40,
+    "fields": {
+        "created_at": "2023-12-03T19:42:44.133Z",
+        "updated_at": "2023-12-03T19:42:44.133Z",
+        "vendor": "VC3c2debe5-a",
+        "recorded_at": "2023-12-03T19:42:44.133Z",
+        "on_time_delivery_rate": 0.57,
+        "quality_rating_avg": 2.67,
+        "average_response_time": 1132.39,
+        "fulfilment_rate": 0.47
+    }
+},
+{
+    "model": "metric.performancemetric",
+    "pk": 41,
+    "fields": {
+        "created_at": "2023-12-04T06:31:56.776Z",
+        "updated_at": "2023-12-04T06:31:56.776Z",
+        "vendor": "VC19ebb2e0-9",
+        "recorded_at": "2023-12-04T06:31:56.776Z",
+        "on_time_delivery_rate": 0.0,
+        "quality_rating_avg": 0.0,
+        "average_response_time": 1440.1666666666667,
+        "fulfilment_rate": 0.0
+    }
+},
+{
+    "model": "metric.performancemetric",
+    "pk": 42,
+    "fields": {
+        "created_at": "2023-12-04T06:33:15.641Z",
+        "updated_at": "2023-12-04T06:33:15.641Z",
+        "vendor": "VC19ebb2e0-9",
+        "recorded_at": "2023-12-04T06:33:15.641Z",
+        "on_time_delivery_rate": 0.0,
+        "quality_rating_avg": 0.0,
+        "average_response_time": 1440.1666666666667,
+        "fulfilment_rate": 1.0
+    }
+},
+{
+    "model": "metric.performancemetric",
+    "pk": 43,
+    "fields": {
+        "created_at": "2023-12-04T06:33:23.131Z",
+        "updated_at": "2023-12-04T06:33:23.131Z",
+        "vendor": "VC19ebb2e0-9",
+        "recorded_at": "2023-12-04T06:33:23.131Z",
+        "on_time_delivery_rate": 0.0,
+        "quality_rating_avg": 4.0,
+        "average_response_time": 1440.1666666666667,
+        "fulfilment_rate": 1.0
+    }
+}
+]
