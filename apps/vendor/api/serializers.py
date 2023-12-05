@@ -19,9 +19,15 @@ class CreateVendorSerializer(serializers.Serializer):
     address = serializers.CharField()
 
     def validate_user_email(self, value):
-        if User.objects.filter(email=value).exists():
-            raise serializers.ValidationError('This email already associated with user.')
-        return value
+        try:
+            user = User.objects.get(email=value)
+        except User.DoesNotExist:
+            raise serializers.ValidationError('Register as user to become vendor.')
+        try:
+            _ = Vendor.objects.get(user=user)
+            raise serializers.ValidationError('Email taken already.')
+        except Vendor.DoesNotExist:
+            return value
     
     def validate_name(self, value):
         if not value.replace(" ", "").isalpha():
@@ -34,8 +40,7 @@ class CreateVendorSerializer(serializers.Serializer):
         contact_detail = validated_data['contact_detail']
         address = validated_data['address']
 
-        # user = User.objects.create(email=user_email)
-        user = User.objects.create_user(email=user_email, password='samsam')
+        user = User.objects.get(email=user_email)
         vendor = Vendor.objects.create(user=user, name=name, contact_detail=contact_detail, address=address)
 
         return vendor

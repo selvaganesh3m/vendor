@@ -1,5 +1,5 @@
 import json
-from uuid import uuid4
+import pytz
 
 from django.utils import timezone
 from rest_framework import serializers
@@ -7,6 +7,7 @@ from rest_framework import serializers
 from apps.order.models import PurchaseOrder
 from apps.vendor.models import Vendor
 from django.core.validators import MinValueValidator, MaxValueValidator
+from vm.settings import TIME_ZONE
 
 
 class PurchaseOrderSerializer(serializers.ModelSerializer):
@@ -21,12 +22,12 @@ class PurchaseOrderSerializer(serializers.ModelSerializer):
 
 
 class CreatePurchaseOrderSerializer(serializers.Serializer):
-    delivery_date = serializers.DateField()
+    delivery_date = serializers.DateTimeField()
     items = serializers.JSONField()
     quantity = serializers.IntegerField()
 
     def validate_delivery_date(self, value):
-        current_date = timezone.now().date()
+        current_date = timezone.now()
         if value < current_date:
             raise serializers.ValidationError("Delivery date cannot be in the past.")
         return value
@@ -58,7 +59,7 @@ class UpdatePurchaseOrderSerializer(serializers.ModelSerializer):
         fields = ('vendor', 'delivery_date', 'items', 'quantity')
 
     def validate_delivery_date(self, value):
-        current_date = timezone.now().date()
+        current_date = timezone.now()
         if value < current_date:
             raise serializers.ValidationError("Delivery date cannot be in the past.")
         return value

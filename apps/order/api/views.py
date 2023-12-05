@@ -43,14 +43,14 @@ class RetrieveUpdateDestroyAPIView(APIView):
     def get(self, request, po_number, *args, **kwargs):
         order = self.get_order(po_number)
         if not order:
-            return Response({"message: Order not found."}, status=status.HTTP_404_NOT_FOUND)
+            return Response({"message": "Order not found."}, status=status.HTTP_404_NOT_FOUND)
         serializer = PurchaseOrderSerializer(order)
         return Response(serializer.data, status=status.HTTP_200_OK)
 
     def put(self, request, po_number, *args, **kwargs):
         order = self.get_order(po_number)
         if not order:
-            return Response({"message: Order not found."}, status=status.HTTP_404_NOT_FOUND)
+            return Response({"message": "Order not found."}, status=status.HTTP_404_NOT_FOUND)
         serializer = UpdatePurchaseOrderSerializer(
             order, data=request.data, partial=True)
         if serializer.is_valid():
@@ -61,7 +61,7 @@ class RetrieveUpdateDestroyAPIView(APIView):
     def delete(self, request, po_number, *args, **kwargs):
         order = self.get_order(po_number)
         if not order:
-            return Response({"message: Order not found."}, status=status.HTTP_404_NOT_FOUND)
+            return Response({"message": "Order not found."}, status=status.HTTP_404_NOT_FOUND)
         order.delete()
         return Response({'message': 'Order deleted successfully.'}, status=status.HTTP_204_NO_CONTENT)
 
@@ -78,8 +78,7 @@ class AssignOrderToVendor(APIView):
         try:
             vendor = Vendor.objects.get(vendor_code=vendor_code)
         except Vendor.DoesNotExist:
-            return Response({'message': 'Order not found.'}, status=status.HTTP_404_NOT_FOUND)
-
+            return Response({'message': 'Vendor not found.'}, status=status.HTTP_404_NOT_FOUND)
         if purchase_order.vendor:
             return Response({"message": "Order already assiged to another vendor."}, status=status.HTTP_409_CONFLICT)
         purchase_order.vendor = vendor
