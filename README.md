@@ -2,14 +2,14 @@
 
 
 1. Project Setup:
-    - clone `git@github.com:selvaganesh3m/vendor.git` (using ssh)
-    - create virtual env for project and activate
-    -  if activated `pip install -r requirements.txt` type the command from base dir
-    - check if all the package installed by using `pip freeze`
-    - to run test cases (must run from BASE directory)
+    - Clone `git@github.com:selvaganesh3m/vendor.git` (using ssh)
+    - Create virtual env for project and activate
+    - If activated `pip install -r requirements.txt` type the command from base dir
+    - Theck if all the package installed by using `pip freeze`
+    - To run test cases (must run from BASE directory)
         - `python manage.py test apps/order/api`
         - `python manage.py test apps/vendor/api`
-    - to run server `python manage.py runsererver`
+    - To run server `python manage.py runsererver`
 
 1. Some changes:
     1. Problem:
