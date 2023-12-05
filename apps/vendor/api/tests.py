@@ -180,6 +180,7 @@ class GetVendorAPITest(TestCase):
         with self.assertRaises(Vendor.DoesNotExist):
             Vendor.objects.get(vendor_code=self.vendor1.vendor_code)
 
-
+class VendorRelatedAPITest(TestCase):
+    pass
         
 

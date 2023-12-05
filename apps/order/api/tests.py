@@ -4,6 +4,9 @@ from django.utils import timezone
 from django.utils.timezone import timedelta
 from django.urls import reverse
 from rest_framework import status
+from rest_framework.authtoken.models import Token
+from rest_framework.test import APIClient
+
 
 from apps.order.models import PurchaseOrder
 from apps.vendor.models import Vendor
@@ -31,7 +34,7 @@ class PurchaseOrderTest(TestCase):
         self.items1 = "[{\"note:3\"}]"
         self.items2 = "[{\"monitor:3\", \"cpu\"}: 3]"
         self.purchase_order1 = PurchaseOrder.objects.create(delivery_date=self.delivery_date, items=self.items1, quantity=1)
-        self.purchase_order1 = PurchaseOrder.objects.create(delivery_date=self.delivery_date, items=self.items2, quantity=2)
+        self.purchase_order2 = PurchaseOrder.objects.create(delivery_date=self.delivery_date, items=self.items2, quantity=2)
 
 
     # GET purchase orders
@@ -229,3 +232,53 @@ class PurchaseOrderTest(TestCase):
         with self.assertRaises(PurchaseOrder.DoesNotExist):
             PurchaseOrder.objects.get(po_number=self.purchase_order1.po_number)
 
+
+
+class OtherOrderRelatedAPITest(TestCase):
+    def setUp(self) -> None:
+        self.user1 = User.objects.create_user(
+            email='ankur@gmail.com', password='shukla')
+        self.user2 = User.objects.create_user(
+            email='likith@gmail.com', password='shukla')
+        self.user3 = User.objects.create_user(
+            email='deva@gmail.com', password='shukla')
+
+        self.vendor1 = Vendor.objects.create(
+            user=self.user1, name="ankur", contact_detail="india", address="india")
+        self.vendor2 = Vendor.objects.create(
+            user=self.user2, name="likith", contact_detail="india", address="india")
+        
+        
+        self.delivery_date = timezone.now() + timedelta(days=7)
+        self.past_date = timezone.now() + timedelta(days=-2)
+        self.items1 = "[{\"note:3\"}]"
+        self.items2 = "[{\"monitor:3\", \"cpu\"}: 3]"
+        self.purchase_order1 = PurchaseOrder.objects.create(delivery_date=self.delivery_date, items=self.items1, quantity=1)
+        self.purchase_order2 = PurchaseOrder.objects.create(vendor=self.vendor2,delivery_date=self.delivery_date, items=self.items2, quantity=2)
+
+
+    # Assign order to Vendor 
+    def test_assign_order_to_vendor_with_invalid_po_number(self):
+        url = reverse('assign-order-to-vendor', args=["PO3e4s6a9s8-d", self.vendor1.vendor_code]) 
+        response = self.client.put(url)
+        self.assertEqual(response.status_code, status.HTTP_404_NOT_FOUND)
+        self.assertEqual(response.json()['message'], 'Order not found.')
+
+    def test_assign_order_to_vendor_with_invalid_vendor_code(self):
+        url = reverse('assign-order-to-vendor', args=[self.purchase_order1.po_number, "VCe3oqp4a3-d"]) 
+        response = self.client.put(url)
+        self.assertEqual(response.status_code, status.HTTP_404_NOT_FOUND)
+        self.assertEqual(response.json()['message'], 'Vendor not found.')
+
+    def test_assign_order_to_vendor_with_other_vendor_order(self):
+        url = reverse('assign-order-to-vendor', args=[self.purchase_order2.po_number, self.vendor1.vendor_code]) 
+        response = self.client.put(url)
+        self.assertEqual(response.status_code, status.HTTP_409_CONFLICT)
+        self.assertEqual(response.json()['message'], 'Order already assiged to another vendor.')
+    
+    def test_assign_order_to_vendor_success(self):
+        url = reverse('assign-order-to-vendor', args=[self.purchase_order1.po_number, self.vendor1.vendor_code]) 
+        response = self.client.put(url)
+        self.assertEqual(response.status_code, status.HTTP_200_OK)
+        response_json = response.json()
+        self.assertEqual(response_json['message'], 'Order assigned to vendor.')

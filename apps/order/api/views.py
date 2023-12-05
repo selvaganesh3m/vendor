@@ -78,8 +78,7 @@ class AssignOrderToVendor(APIView):
         try:
             vendor = Vendor.objects.get(vendor_code=vendor_code)
         except Vendor.DoesNotExist:
-            return Response({'message': 'Order not found.'}, status=status.HTTP_404_NOT_FOUND)
-
+            return Response({'message': 'Vendor not found.'}, status=status.HTTP_404_NOT_FOUND)
         if purchase_order.vendor:
             return Response({"message": "Order already assiged to another vendor."}, status=status.HTTP_409_CONFLICT)
         purchase_order.vendor = vendor
