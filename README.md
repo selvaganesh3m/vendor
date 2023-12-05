@@ -29,21 +29,21 @@
             - url: POST `http://localhost:8000/api/register/`
             - payload
                 ```json
-                      {
-                        "email": "ram@gmail.com",
-                        "password": "johndoe",
-                        "confirm_password": "johndoe"
-                        }
-                        ```
+                {
+                    "email": "ram@gmail.com",
+                    "password": "johndoe",
+                    "confirm_password": "johndoe"
+                }
+                ```
         1. Get Token:
             - url: GET `http://localhost:8000/api-token-auth/`
             - payload
                 ```json
-                     {
-                        "username": "james@gmail.com",
-                        "password": "samsam"
-                    }
-                    ```
+                {
+                    "username": "james@gmail.com",
+                    "password": "samsam"
+                }
+                ```
           
 
         ### Vendor (in requirement)
@@ -55,12 +55,12 @@
            - url: POST `http://localhost:8000/api/vendors/`
            - payload: 
                 ```json
-                    {
-                        "user_email": "kalpesh@gmail.com",
-                        "name": "Kalpesh",
-                        "contact_detail":"14, Tom Ashok Nagar, Delhi",
-                        "address": "India"
-                    }
+                {
+                    "user_email": "kalpesh@gmail.com",
+                    "name": "Kalpesh",
+                    "contact_detail":"14, Tom Ashok Nagar, Delhi",
+                    "address": "India"
+                }
                 ```
         1. Update Vendor
            - url: PUT `http://localhost:8000/api/vendors/<str:vendor_code>/`
@@ -85,21 +85,21 @@
             - url: POST `http://localhost:8000/api/purchase-orders/`
             - payload:
                 ```json
-                    {
+                {
                     "delivery_date": "2023-12-12T16:49:11.025411+05:30",
                     "items": [{"Monitor": 4}],
                     "quantity": 1
-                    }
+                }
                 ```
         1. Update Puchase Order
             - url: PUT `http://localhost:8000/api/purchase-orders/<str:po_number>/`
             - payload:
                 ```json
-                    {
+                {
                     "delivery_date": "2023-12-12T16:49:11.025411+05:30",
                     "items": [{"note": 3}],
                     "quantity": 2
-                    }
+                }
                 ```
         1. Delete Purchase Order
              - url: DELETE `http://localhost:8000/api/purchase-orders/<str:po_number>/`
@@ -115,9 +115,9 @@
             - url: PUT   
             - payload: `http://localhost:8000/api/purchase-orders/<str:po_number>/rate/`
                 ```json
-                     {
-                        "rating": 3
-                    }
+                {
+                    "rating": 3
+                }
                 ```
 
         ### Vendor Related API (In requirement)
